@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flor Delicious-jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="themes/flordel.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link rel="prefetch" href="img/fruit1.png">
+    <link rel="prefetch" href="img/candy1.jpg">
+    <link rel="prefetch" href="img/candy2.jpg">
+    <link rel="prefetch" href="img/fruit2.png">
+    <link rel="prefetch" href="img/fruit3.png">
+
+
+    <!-- javascript-->
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    <!--<script>
+      $(document).ready(function(){
+        $('button').tap(function(submit){
+          if($('#name').val().length == 0) {
+            $('.noname').text('Please enter your name.'); 
+              submit.preventDefault();
+            } //end if
+            else {
+                alert("If this form had an action, you would have submitted it!")
+                  $('.noname').text(''); 
+                  submit.preventDefault();
+              }   //end else                     
+        }); //end submit button tap
+
+        $('#name').tap(function(){
+          $('.noname').text('');
+        }); //end name tap
+      }); //end ready
+    </script> - moved to the bottom of the page-->
+    
+</head>
+
+<body>
+  <section data-role="page" id="home" data-theme="c">
+      <header data-role="header" data-theme="c" data-position="fixed">
+        <h1>Flor Delicious</h1>
+
+            <nav data-role="navbar">
+              <ul>
+                <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+                <li><a href="#about" data-transition="flip">About Us</a></li>
+                <li data-role="collapsible" data-inset="false">
+                  <h4>Our Store</h4>
+                  <ul>
+                    <li><a href="#">Fruit</a></li>
+                    <li><a href="#">Candy</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                  </ul>
+                </li> 
+                <li><a href="#contact" data-transition="flow">Contact Us</a></li>
+            </ul>
+          </nav>
+      </header>
+
+      <main data-role="main" class="ui-content">
+        
+          <h1 class="ui-bar ui-bar-a ui-corner-all">Same-Day Delivery</h1>
+            <div class= "ui-body ui-body-a ui-corner-all">
+              <div class="ui-grid-a">
+                <div class="ui-block-a">
+                  <p>Here at Flor Delicious we want you to know how important your occasion is to us - even if the occasion is "just because".<br>
+                  We offer same-day delivery and guarantee promt service!</p>
+                </div>
+                <div class="ui-block-b">
+                  <p><img id="clock" src="img/flower.png" alt=""></p>
+                </div>
+              </div>
+            </div>
+          
+        <div class="ui-grid-b">
+          <div class="ui-block-a">
+            <h3>Fruit Arrangements </h3>
+            <p><a href="#"><img src="img/fruit1.png" alt=""></a></p>
+            <p> We use fresh ripe fruit and premium chocolate to create a delicious and healthy treat anyone will enjoy!</p>
+            <p><a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Read more</a></p>
+          </div>
+
+          <div class="ui-block-b">
+            <h3>Candy Bouquets</h3>
+            <p><a href="#"><img src="img/candy1.jpg" alt=""></a></p>           
+            <p> There is no need to choose between flowers and chocolates! Choose both for the most romantic gift ever! </p>
+            <p><a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Read more</a></p>
+          </div>
+
+          <div class="ui-block-c">
+            <h3>Skin Care products</h3>
+            <p><a href="#"><img src="img/etsy.jpg" alt=""></a></p>
+            <p> We make healthy, safe and natural beauty products. We also use all-organic ingredients when possible. </p>
+            <p><a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Read more</a></p>
+          </div>
+        </div> 
+
+      </main>
+
+    <footer data-role="footer">
+        <p>Copyright by Flor Delicious. All rights reserved.</p>
+    </footer>
+</section>
+
+<section data-role="page" id="about" data-theme="c">
+      <header data-role="header" data-theme="c" data-position="fixed">
+        <h2>Flor Delicious</h2>
+          <nav data-role="navbar">
+              <ul>
+                <li><a href="#home" data-transition="pop">Home</a></li>
+                <li><a href="#about" class="ui-btn-active ui-state-persist">About Us</a></li>
+                <li data-role="collapsible" data-inset="false">
+                  <h4>Our Store</h4>
+                  <ul data-inset="true">
+                    <li><a href="#">Fruit</a></li>
+                    <li><a href="#">Candy</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact" data-transition="flow">Contact Us</a></li>
+            </ul>
+          </nav>
+      </header>
+
+      <main data-role="main" class="ui-content ui-grid-a">
+        <article class="ui-block-a">
+          <h2  class="ui-bar ui-bar-a ui-corner-all">About Our Store</h2>
+          <div class= "ui-body ui-body-a ui-corner-all">
+            <p>Here at Flor Delicious, we want You to know just how special Your occasion is to us, even if the occasion is simply "just because". </p>
+            <p>We use the freshest fruit and delicious candies and chocolates, so our talented florists can create a wide array of sweet arrangements to fit anything Your heart desires.</p>
+
+            <p>We also have a health store, featuring organic harmless skin and beauty products, so You can give Your friends, Your loved ones or even Yourself the most important gift - the gift of health.</p>
+
+            <p>We are family owned and operated, and we intend on staying that way, so we can keep meeting the highest standards of our products.</p>
+          </div>
+        </article>
+
+        <aside class="ui-block-b">
+          <h2>Flor Delicious</h2>
+          <ul>
+            <li><h3>Candy Bouquets and Fruit Arrangements for any occasion.</h3></li>
+            <li><h3>All-natural organic skin care products.</h3></li>
+          </ul>
+            <p>Swipe right and left to see a picture!</p>
+            <img src="img/flower-logo.png" alt="">
+            <div id="swipe" class="start"></div>
+        </aside>
+      </main>
+
+        <footer data-role="footer">
+            <p>Copyright by Flor Delicious. All rights reserved.</p>
+        </footer>
+    </section>
+
+    <section data-role="page" id="contact" data-theme="c">
+      <header data-role="header" data-theme="c" data-position="fixed">
+        <h1>Flor Delicious</h1>
+
+            <nav data-role="navbar">
+              <ul>
+                <li><a href="#home" data-transition="slide">Home</a></li>
+                <li><a href="#about" data-transition="flip">About Us</a></li>
+                <li data-role="collapsible" data-inset="false">
+                  <h4>Our Store</h4>
+                  <ul>
+                    <li><a href="#">Fruit</a></li>
+                    <li><a href="#">Candy</a></li>
+                    <li><a href="#">Skin Care</a></li>
+                  </ul>
+                </li> 
+                <li><a href="#" class="ui-btn-active ui-state-persist">Contact Us</a></li>
+            </ul>
+          </nav>
+        </header>
+
+    <main data-role="main" class="ui-content ui-grid-a">
+     
+      <h1 class="ui-bar ui-bar-a ui-corner-all">Contact Us To Place Your Order</h1>
+
+      <form>
+        
+        <div class="ui-field-contain">
+          <label for="name">Your name: </label>
+          <input type="text" id="name">
+          <span class="noname"></span>
+        </div>
+
+        <div class="ui-field-contain">
+             <label for="email">Your email:</label>
+             <input type="text" id="email">
+             <span class="noemail"></span>
+        </div>
+
+        <div class="ui-field-contain">
+          <label for="category" class="select">Please select category for your order:</label>
+          <select id="category" data-native-menu="false">
+            <option checked>Please select one:</option>
+            <option value="candy">Candy Bouquets</option>
+            <option value="fruit">Fruit Arrangements</option>
+            <option value="skincare">All-natural skin care</option>
+            <option value="other">Other</option>          
+          </select>
+        </div>
+
+        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true" class="ui-field-contain">
+          <legend>What state do you live in?</legend>
+          <label for="massachusetts">
+            <input type="radio" name="state" value="massachusetts" id="massachusetts" checked> Massachusetts
+          </label>
+          <label for="california">
+            <input type="radio" name="state" value="california" id="california"> California
+          </label>
+          <label for="florida">
+            <input type="radio" name="state" value="florida" id="florida"> Florida
+          </label>
+        </fieldset>
+
+
+         <div class="ui-field-contain">
+          <label for="comments">Your comments:</label>
+          <textarea id="comments"></textarea>
+         </div>
+
+        <button name="submit" type="submit">Submit</button>
+
+      </form>
+    </main>
+
+        <footer data-role="footer">
+            <p>Copyright by Flor Delicious. All rights reserved.</p>
+        </footer>
+  </section>
+
+      <script>
+      $(document).ready(function(){
+        $('button').tap(function(submit){
+          if($('#name').val().length == 0) {
+            $('.noname').text('Please enter your name.'); 
+              submit.preventDefault();
+            } //end if name
+            else if($('#email').val().length == 0) {
+            $('.noemail').text('Please enter a valid email address'); 
+              submit.preventDefault();
+            } //end if email
+            else {
+                alert("If this form had an action, you would have submitted it!")
+                  $('.noname').text(''); 
+                  submit.preventDefault();
+              }   //end else                     
+        }); //end submit button tap
+
+        $('#name').tap(function(){
+          $('.noname').text('');
+        }); //end name tap
+
+        $('#email').tap(function(){
+          $('.noemail').text('');
+        }); //end email tap
+
+                  $('main').bind('swipeleft', function(event) {
+                        $('#swipe').removeClass().addClass('one');           
+                  });
+                  $('main').bind('swiperight', function(event) {
+                        $('#swipe').removeClass().addClass('two');         
+                  });
+                  $('main').bind('taphold', function(event) {
+                        $('#kitteh').removeClass().addClass('lots');
+                  });
+
+            });//end ready
+      </script>
+
+</body>
+</html>
